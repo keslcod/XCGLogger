@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license       = { :type => "MIT", :file => "LICENSE.txt" }
   s.author        = { "Dave Wood" => "dave@cerebralgardens.com" }
 
-  s.source        = { :git => "https://github.com/DaveWoodCom/XCGLogger", :tag => s.version.toString }
+  s.source        = { :git => "https://github.com/DaveWoodCom/XCGLogger", :tag => s.version.to_s }
   
   s.source_files  = "XCGLogger/Library/XCGLogger/XCGLogger.swift"
 
