@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name          = "XCGLogger"
-  s.version       = "1.8.1"
+  s.version       = "1.8.1-Swift1.2"
   s.summary       = "A debug log module for use in Swift projects."
 
   s.description   = <<-DESC
@@ -12,9 +12,10 @@ Pod::Spec.new do |s|
   s.license       = { :type => "MIT", :file => "LICENSE.txt" }
   s.author        = { "Dave Wood" => "dave@cerebralgardens.com" }
 
-  s.source        = { :git => "https://github.com/DaveWoodCom/XCGLogger", :tag => "Version_1.8.1" }
+  s.source        = { :git => "https://github.com/DaveWoodCom/XCGLogger", :tag => s.version.toString }
   
-  s.source_files  = "XCGLogger/Library/XCGLogger/*.swift"
+  s.source_files  = "XCGLogger/Library/XCGLogger/XCGLogger.swift"
+
   s.framework     = "Foundation"
   
   s.ios.deployment_target = '8.0'
